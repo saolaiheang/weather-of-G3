@@ -1,0 +1,17 @@
+function validateForm() {
+    var email = document.getElementById("login-email").value;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+        
+        if (email === "user@example.com") {
+            return true;
+        } else {
+            return false;
+        }
+        
+    }
+    window.localStorage.setItem("Email",email);
+    window.location = "wheather.html"
+     
+}
