@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Display</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-3">
+    <div class="col-md-6 offset-md-3" style="margin-left: 60%;">
+      <button id="logout-email" onclick="logout()" type="button" class="btn btn-danger float-right" style="width: 160px; ">Log out</button>
+    </div>
+  </div>
+  <div class="row justify-content-center1"  > 
+    <h4 style="font-weight: bold; margin-top: 100px; margin-left: 60%;">Phnom Penh Weather</h4>
+    <p style="margin-top: 10px; margin-left: 60%;">Login as:
+        <script>
+            document.write(localStorage.getItem("Email"));
+        </script>
+    </p>
+  </div>
+  <div class="row justify-content-center" style="margin-top: 20px;">
+    <div class="col-md-6" >
+      <div class="card" style="width: 50%; margin-left: 25%;">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <h5 class="card-title" style="font-weight: bold;">Weather</h5>
+              <p class="card-text">2024-04-23</p>
+              <img src="sun.jpg" alt="" style="width: 65px;">
+              <h1>37&deg;C</h1>
+              <p class="card-text" style="color: gray;">"Partly cloudy"</p>
+            </div>
+            <div class="col">
+              <h5 class="card-title" style="font-weight: bold;">Conditions</h5>
+              <p class="card-text">Feels Like <span style="margin-left: 30%;">37.7 &deg;C</span> </p>
+              <p class="card-text">Humidity <span style="margin-left: 35%;">44%</span></p>
+              <p class="card-text">Wind(Kph) <span style="margin-left: 30%;">16.9</span></p>
+              <p class="card-text">UV <span style="margin-left: 60%;">11</span></p>
+              <p class="card-text">Country <span style="margin-left: 20%;">Cambodia</span></p> 
+              <p class="card-text"> Zone<span style="margin: 5%;"> Asia /Phnom Penh</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-3">
+    <button type="button" class="btn btn-primary" style="padding: 10px;">Share Reaction</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

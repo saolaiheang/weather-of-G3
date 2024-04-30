@@ -12,6 +12,6 @@ function validateForm() {
         
     }
     window.localStorage.setItem("Email",email);
-    window.location = "wheather.html"
+    window.location = "../home/index.html"
      
 }
