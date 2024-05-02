@@ -1,5 +1,3 @@
-
-
 function validateForm(email) {
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
@@ -13,6 +11,5 @@ function validateForm(email) {
     console.log(email);     
 }
 validateForm("sopheak@gmail.com");
-
 
 
