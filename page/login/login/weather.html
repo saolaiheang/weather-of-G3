@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Phnom Pennh Weather Login</h4>
+    <button  onclick="logout()" id="logout-email">Logout</button>
+    <h1 style="text-align: center;justify-content: center;align-items: center;">Login as:
+        <script>
+            document.write(localStorage.getItem("Email"));
+        </script>
+    </h1>
+    <script src="weather.js"></script>
+</body>
+</html>
