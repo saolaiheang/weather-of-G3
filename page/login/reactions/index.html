@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Buttons</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
+
+  <div class="container-fluid" style="padding-top: 50px;">
+    <div class="row">
+      <div class="col text-left">
+        <button class="btn btn-secondary" style="margin-left: 60%; background-color: rgb(226, 222, 222); border: 1px solid rgb(199, 196, 196); width: 15%; color: black;">Back</button>
+      </div>
+     
+      <div class="col text-right">
+        <button class="btn btn-danger" style="margin-right: 60%; width: 15%;">Logout</button>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col text-center">
+        <h5 style="font-weight: bold;">Phnom Penh Weather Website - People Reaction</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-left">
+        <p style="font-weight: bold; margin-left: 29.5%; margin-top: 50px;" >Share Your Reaction</p>
+        <h5 style="margin-left: 29.5%; margin-top: 20px;">Rate(1-5)</h5>
+        <input type="text" class="form-control" style="margin-left: 29.5%; margin-top: 10px; width: 41%; background-color: rgb(245, 242, 242); border: 1px solid rgb(189, 182, 182); color: rgb(117, 112, 112); text-align: left;" placeholder="1-5">
+        <div class="comment" style="margin-left: 29.5%; margin-top: 10px;">Comment</div>
+        <input type="text" class="form-control" style="margin-left: 29.5%; width: 41%; height: 40%; background-color: rgb(245, 242, 242); border: 1px solid rgb(189, 182, 182); color: rgb(117, 112, 112); text-align: left;" placeholder="Comment">
+       
+        <div class="row">
+            <div class="col text-left">
+              <button class="btn btn-primary" style="margin-left: 62.50%; margin-top: 20px; width: 8%;">Submit</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <h5 style="font-weight: bold; margin-top: 7%; margin-right: 21%;">People Reaction About Today’s Weather</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col text-left-1" style="padding: 20px;">
+    <button class="btn btn-primary-1" style="border: 1px solid black; width: 41%; margin-left: 29%;">
+        <h5 style="font-weight: bold; margin-right: 60%; ">sopheak.men@pse.ngo</h5>
+        <p>Today, the weather is very hot. I need to drink a lot of water to handle this situation. I will tell my classmate to drink much water
+            as well. How about your feeling everyone?</p>
+            <div class="star" style="text-align: left; ;">
+                <span class="fa fa-star checked" style="color: orange; font-size: 24px;"></span>
+                <span class="fa fa-star checked" style="color: orange; font-size: 24px;"></span>
+                <span class="fa fa-star checked" style="color: orange; font-size: 24px;"></span>
+                <span class="fa fa-star" style="font-size: 24px; color: rgb(233, 235, 236);" ></span>
+                <span class="fa fa-star" style="font-size: 24px; color: rgb(223, 228, 233);"></span>
+            </div>
+    </button>
+  </div>
 </body>
 </html>
