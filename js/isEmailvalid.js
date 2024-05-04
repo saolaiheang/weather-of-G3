@@ -23,8 +23,6 @@ function validateForm() {
    
     alert("Login successful!");
     return true;
-    
-    
 }
 
 
