@@ -11,7 +11,7 @@ function validateForm() {
         }
         
     }
-    window.localStorage.setItem("Email",email);
+    window.localStorage.setItem("loginEmail",email);
     window.location = "../home/index.html"
      
 }
