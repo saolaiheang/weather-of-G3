@@ -6,13 +6,14 @@ function validateForm() {
         
         if (email === "user@example.com") {
             return true;
+          
         } else {
             return false;
         }
         
     }
-    window.localStorage.setItem("loginEmail",email);
-    window.location = "home/index.html"
+    window.localStorage.setItem('loginEmail',email);
+    window.location = "/home/index.html"
     
      
 }

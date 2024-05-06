@@ -1,12 +1,12 @@
 function logout() {
     var removed = document.getElementById("logout-email");
     window.localStorage.removeItem("loginEmail");
-    window.location = "login/index.html"
+    window.location = "/login/index.html"
 }
 function sharedReaction(){
     const reaction = document.getElementById('shareReaction');
     window.localStorage.getItem('loginEmail');
-    window.location ="reactions/index.html"
+    window.location ="/reactions/index.html"
 }
 
 async function getWeather() {

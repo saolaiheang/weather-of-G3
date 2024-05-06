@@ -33,12 +33,12 @@ Array.from(stars).forEach(star => {
 function logout() {   
     localStorage.removeItem('logout');
     localStorage.removeItem('loginEmail');
-    window.location.href = 'login/index.html'; 
+    window.location.href = '/login/index.html'; 
 }
 
 function back(){
     localStorage.removeItem('back');
-    window.location.href = 'home/index.html';
+    window.location.href = '/home/index.html';
 }
 
 
