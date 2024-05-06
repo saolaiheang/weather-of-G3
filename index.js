@@ -12,6 +12,7 @@ function validateForm() {
         
     }
     window.localStorage.setItem("loginEmail",email);
-    window.location = "../login/home/index.html"
+    window.location = "home/index.html"
+    
      
 }
