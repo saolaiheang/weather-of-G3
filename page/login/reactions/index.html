@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Buttons</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <div class="container">
+    <div id="sharedReactions"></div>
+    <div class="button2">
+      <button onclick="back()" type="button" class="btn btn-dark">
+        Back
+      </button>
+
+      <button onclick="logout()" class="btn btn-danger">Log Out</button>
+    </div>
+
+    <div class="f-text" style="margin-left:21%">
+      <h3 style=" margin-top: 3%">Phnom Penh Weather Website - People Reaction</h3>
+      <h3 style="margin-top: 5%">Share Your Reaction</h3>
+    </div>
+    <div class="boxtext" style="width: 58%; margin: auto">
+      <form id="reactionForm">
+        <label for="ratingInput" class="form-label" style="margin-top: 2%; font-size: 20px">Rate (1-5)</label>
+        <input type="number" class="form-control" id="ratingInput" placeholder="1-5" min="1" max="5" style="background-color: #efeff091">
+        <div class="mb-3">
+          <label for="commentInput" class="form-label" style="margin-top: 2%; font-size: 20px">Comment</label>
+          <textarea class="form-control" id="commentInput" rows="3" placeholder="Comment" style="background-color: #efeff091"></textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary" style="color: rgb(255, 255, 255); font-size: 18px; height: 45px; width: 14%; border: 1px solid rgba(128, 128, 128, 0); background-color: #4c7dfb; border-radius: 5px; margin-left: 86%; margin-top: 2%;">Submit</button>
+      </form>
+      <h3>People Reaction About Today’s Weather</h3>
+       
+        <div id="reactionContainer"></div>
+      <div id="reactionsList"></div>
+
+        <div id="reactionsContainer"></div>
+       <div id="loginEmail"> </div>
+
+  </div>
+  </div>
+
+
+
+
+  <script src="index.js"></script>
+</body>
+</html>
